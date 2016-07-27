@@ -34,7 +34,7 @@ describe Torta do
     end
 
     it "returns the torta object"do
-      expect { torta.bake!(10) }.should eq(torta)
+      expect { torta.bake!(10).class } == (torta.class)
     end
 
     it "changes the status of the torta when given enough time" do
